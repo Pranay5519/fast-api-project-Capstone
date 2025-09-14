@@ -14,7 +14,7 @@ app.include_router(routes_auth.router,tags=['Auth'])
 app.include_router(routes_predict.router,tags=["Predict"])
 
 #monitering using prometheus
-Instrumentator().instrument(app).Expose(app)
+Instrumentator().instrument(app).expose(app)
 
 #add Exception handler
 register_exception_handler(app) 

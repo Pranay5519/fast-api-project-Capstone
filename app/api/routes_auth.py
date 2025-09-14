@@ -5,7 +5,7 @@ router = APIRouter()
 
 class AuthInput(BaseModel):
     username : str
-    pasword : str
+    password : str
     
     
 @router.post("/login")

@@ -10,6 +10,6 @@ def get_cache_prediction(key: str):
         return json.loads(value)
     return None
 
-def set_cache_predictoin(key: str,value : dict,expiry:int =3600):
+def set_cache_prediction(key: str,value : dict,expiry:int =3600):
     redis_client.setex(key , expiry,json.dumps(value))
     

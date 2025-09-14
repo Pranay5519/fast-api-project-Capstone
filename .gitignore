@@ -19,3 +19,4 @@ bin-release/
 venv
 .history
 .env
+__pycache__
